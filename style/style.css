@@ -56,9 +56,7 @@ body {
 }
 
 
-.container-six {
-    align-items: center;
-}
+.container-six {}
 
 /*child boxes*/
 .box-one {
@@ -68,10 +66,12 @@ body {
 
 .box-onetwo {
     margin-bottom: 19px;
+    margin-left: 20px;
 }
 
 .box-onethree {
     margin-bottom: 19px;
+    margin-left: 20px;
 }
 
 .box-long {
@@ -82,14 +82,22 @@ body {
 
 .box-top {
     margin-top: 20px;
+    margin-left: -20px;
+}
+
+.box-middle {
+    margin-top: 20px;
 }
 
 .box-special {
     align-self: flex-end;
+    margin-bottom: 20px;
+    margin-right: -25px;
 }
 
 .box-longfive {
     height: 120px;
+    margin-left: 30px;
 }
 
 .box-shortfive {
@@ -98,6 +106,7 @@ body {
 
 .box-longfive2 {
     height: 120px;
+    margin-right: 30px;
 }
 
 p {
@@ -105,6 +114,17 @@ p {
     text-align: center;
 }
 
+.box-leftfat {
+    margin-left: 58px;
+    margin-bottom: 41px;
+}
+
 .box-fat {
     width: 156px;
+    margin-bottom: 41px;
+}
+
+.box-rightfat {
+    margin-bottom: 41px;
+    margin-right: 58px;
 }
