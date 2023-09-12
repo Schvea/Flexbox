@@ -5,8 +5,6 @@ body {
     background-color: black;
 }
 
-/*flexwrap fungerar ej*/
-
 .container {
     min-width: 468px;
     min-height: 160px;
@@ -20,24 +18,25 @@ body {
     justify-content: space-around;
 }
 
-/*här bärjar jag designa själva rektanglarna, inga problem vad jag ser iaf*/
+.box {
+    width: 78px;
+    min-height: 78px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #9D0208;
+    margin: 4px;
+}
+
+
 .container-one {
     justify-content: flex-start;
 }
 
-/*fungerar som det ska(röda rutor i gula)*/
 .container-two {
     justify-content: center;
     gap: 20px;
 }
 
-.box-long {
-
-    height: 120px;
-    align-self: center;
-}
-
-/*allt är som det ska*/
 .container-three {
     justify-content: flex-end;
     width: 78px;
@@ -51,8 +50,42 @@ body {
     align-items: flex-start
 }
 
+
 .container-five {
     align-items: center;
+}
+
+
+.container-six {
+    align-items: center;
+}
+
+/*child boxes*/
+.box-one {
+    margin-left: 19px;
+    margin-bottom: 19px;
+}
+
+.box-onetwo {
+    margin-bottom: 19px;
+}
+
+.box-onethree {
+    margin-bottom: 19px;
+}
+
+.box-long {
+
+    height: 120px;
+    align-self: center;
+}
+
+.box-top {
+    margin-top: 20px;
+}
+
+.box-special {
+    align-self: flex-end;
 }
 
 .box-longfive {
@@ -67,30 +100,11 @@ body {
     height: 120px;
 }
 
-.box-special {
-    align-self: flex-end;
-}
-
-/*enskild röd box, opassande namn för att jag lätt ska referera när jag testar funktionerna, fungerar inte som jag förväntat vill att den ska vara längst uppe i hörnet*/
-.box {
-    width: 78px;
-    min-height: 78px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: #9D0208;
-    margin: 5px;
-}
-
-.container-six {
-    align-items: center;
-
+p {
+    color: bisque;
+    text-align: center;
 }
 
 .box-fat {
     width: 156px;
-}
-
-p {
-    color: bisque;
-    text-align: center;
 }
